@@ -3,4 +3,3 @@ Pillow==9.4.0
 plotly==5.13.0
 pyodbc==4.0.35
 streamlit==1.19.0
-~treamlit==1.13.0
