@@ -50,10 +50,7 @@ st.markdown("<h1 style='text-align: center;color:#8e0207;'>PC SHOP</h1>",
 
 
 
-def main():
-    #this code to make connection with the lacal database
-    connection = pyodbc.connect('Driver={SQL Server};Server=localhost\SQLEXPRESS;''Database=PCShop;Trusted_Connection=yes;') 
-  
+
 # Container for all tabs  
 
     tab1, tab2,tab3 = st.tabs(["Home","Visuals", "Sql test "])
