@@ -53,7 +53,7 @@ st.markdown("<h1 style='text-align: center;color:#8e0207;'>PC SHOP</h1>",
 
 # Container for all tabs  
 
-    tab1, tab2,tab3 = st.tabs(["Home","Visuals", "Sql test "])
+tab1, tab2,tab3 = st.tabs(["Home","Visuals", "Sql test "])
 
 #First tab for information about the app and to learn sql 
 
