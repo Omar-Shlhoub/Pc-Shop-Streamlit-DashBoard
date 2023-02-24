@@ -56,7 +56,7 @@ st.markdown("<h1 style='text-align: center;color:#8e0207;'>PC SHOP</h1>",
 
 # Container for all tabs  
 
-tab1, tab2,tab3 = st.tabs(["Home","Visuals", "Sql test "])
+tab1, tab2 = st.tabs(["Home","Visuals"])
 
 #First tab for information about the app and to learn sql 
 
@@ -258,24 +258,3 @@ with tab2:
             graphMX=px.bar(KPIMX, x='Country',y='revenue',color='City', barmode='group')
             st.write(graphMX)
             st.table(KPIMX)
-with tab3:
-    st.title("Test Your Might In Sql")
-    st.subheader("Write sql from [PCshop] database :")
-    #Columns layout
-    col1,col2=st.columns(2)
-    with col1:
-        with st.form(key='query_form'):
-            raw_code=st.text_area("SQL CODE HERE")
-            submit_code=st.form_submit_button("Execute")
-    #results Layouts
-    with col2:
-        if submit_code:
-            st.info("Query submitted")
-            st.code(raw_code)
-        #results
-            query = raw_code
-            table = pd.read_sql(query, connection)
-            st.write(table)
-
-#if __name__ =='__main__':
-#main()
