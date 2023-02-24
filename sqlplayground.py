@@ -35,7 +35,7 @@ st.markdown(page_bg_img, unsafe_allow_html=True)
 
 #Get the data from the csv file 
 def get_data():
-    sales = pd.read_csv('C:/Users/Omar/Desktop/PC-shop-test/data/raw/PCshop1.csv', sep=',', encoding="iso-8859-1",parse_dates=[9])
+    sales = pd.read_csv('C:/Users/Omar/Desktop/PC-shop-test/PCshop1.csv', sep=',', encoding="iso-8859-1",parse_dates=[9])
     return sales
 sales=get_data()
 
