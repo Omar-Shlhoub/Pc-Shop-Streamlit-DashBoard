@@ -277,5 +277,5 @@ with tab3:
             table = pd.read_sql(query, connection)
             st.write(table)
 
-if __name__ =='__main__':
-main()
+#if __name__ =='__main__':
+#main()
