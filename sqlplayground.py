@@ -167,7 +167,7 @@ with tab2:
             with col2:
                 if genre == 'SalesType':
                     with st.expander("See the sql or pandas code :"):
-                        image = Image.open('Gender_salesType.jpeg')
+                        image = Image.open('PC-shop-test/src/data/Gender_salesType.jpeg')
                         st.image(image,caption='The graphic below shows the percentage of those who pay all or part of the price of the computer in related to gender')
                 elif genre == 'Type':
                     with st.expander("See the sql or pandas code :"):
